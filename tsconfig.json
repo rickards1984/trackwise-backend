@@ -10,10 +10,10 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "baseUrl": ".",
-    "paths": { "@shared/*": ["../shared/*"] },
-    "rootDirs": ["src", "../shared"]
+    "paths": { "@shared/*": ["./src/shared/*"] },
+    "rootDirs": ["src"]
   },
-  "include": ["src/**/*", "../shared/**/*"],
+  "include": ["src/**/*"],
   "exclude": [
     "node_modules",
     "dist",
