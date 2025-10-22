@@ -1,0 +1,28 @@
+# Railway Environment Variables
+# Copy these to Railway Dashboard → Your Project → Variables
+
+# 1. JWT Secret (freshly generated)
+JWT_SECRET=b47d090042411da146f081bbf7c9952f3246446734fb335afbf09880901a6e4b3d110b2a5ff03ea4b1576e19e2ef343d
+
+# 2. Tenant Seeding (copy values from your Replit Secrets)
+# In Replit: Go to Tools → Secrets to find these values
+SEED_TENANT_SLUG=<copy-from-replit-secrets>
+SEED_TENANT_NAME=<copy-from-replit-secrets>
+SEED_TENANT_UKPRN=<copy-from-replit-secrets>
+
+# 3. Database (Railway auto-generates this when you add PostgreSQL)
+DATABASE_URL=<automatically-set-by-railway>
+
+# 4. Optional but recommended
+NODE_ENV=production
+PORT=3000
+
+# ────────────────────────────────────────────────────────
+# HOW TO SET THESE IN RAILWAY:
+# ────────────────────────────────────────────────────────
+# 1. Deploy to Railway from GitHub
+# 2. Click on your project
+# 3. Go to "Variables" tab
+# 4. Click "New Variable" for each one above
+# 5. After adding PostgreSQL, DATABASE_URL appears automatically
+# 6. Run: railway run npm run seed (to create demo tenant)

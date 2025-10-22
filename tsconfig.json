@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": { "@shared/*": ["../shared/*"] },
+    "rootDirs": ["src", "../shared"]
+  },
+  "include": ["src/**/*", "../shared/**/*"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "*.ts",
+    "vite.ts",
+    "index.ts",
+    "routes.ts",
+    "storage.ts",
+    "database-storage.ts",
+    "ai-assistant.ts",
+    "config.ts",
+    "seed.ts",
+    "standalone.ts"
+  ]
+}
